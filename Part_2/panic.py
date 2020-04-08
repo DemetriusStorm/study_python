@@ -13,7 +13,7 @@ for l in letters:
         if l not in new_list:
             new_list.append(l)
 
-plist = new_list
+plist = new_list.copy()
 new_phrase = ''.join(plist)
 print(plist)
 print(new_phrase)
