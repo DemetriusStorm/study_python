@@ -1,5 +1,6 @@
 def search4vowels():
-    """Print and position vowels in set from input text.
+    """
+    Print and position vowels in set from input text.
     Practice for fun, fun for practice.. :)
     """
     vowels = set('aeiou')
@@ -16,3 +17,4 @@ def search4vowels():
 
 
 search4vowels()
+print('\nAbout this file.\n', search4vowels.__doc__)
