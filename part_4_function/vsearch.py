@@ -10,4 +10,12 @@ def search4vowels():
     return ''.join(list(found))
 
 
-print(search4vowels())
+def search_for_vowels(word: str) -> str:
+    """Print vowels, finded in input word."""
+    vowels = set('aeiou')
+    found = vowels.intersection(set(word))
+    return ''.join(list(found))
+
+
+# print(search4vowels())
+print(search_for_vowels('sdfsfaikdsohfa'))
