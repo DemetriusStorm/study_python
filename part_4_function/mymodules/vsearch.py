@@ -1,14 +1,9 @@
-"""
-Search vowels in input word
-"""
-
-
-def search_for_vowels(word: str) -> set:
-    """ Return finded vowels in word"""
+def search_for_vowels(phrase: str) -> set:
+    """ Return any vowels found in a supplied phrase"""
     vowels = set('aeiou')
-    return vowels.intersection(set(word))
+    return vowels.intersection(set(phrase))
 
 
 def search_letters_in_phrase(phrase: str, letters: str = 'aeiou') -> set:
-    """ Return letters in phrase."""
+    """ Return  a set of the 'letters' found in 'phrase'."""
     return set(letters).intersection(set(phrase))
