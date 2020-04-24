@@ -15,7 +15,6 @@ def hello() -> str:
 
 @app.route('/search4')
 def do_search() -> str:
-    print('In phrase: Life, the universe, and everything!\n')
     return str(search4letters('Life, the universe, and everything!'))
 
 
