@@ -9,6 +9,12 @@ app = Flask(__name__)
 
 
 def log_request(req: 'flask_request', res: str) -> None:
+    """
+    Write text to file
+    :param req: request
+    :param res: resource
+    :return: None
+    """
     with open('vsearch.log', 'a') as log:
         print(req.form, req.remote_addr, req.user_agent, res, file=log, sep='|')
 
@@ -35,6 +41,10 @@ def entry_page() -> 'html':
 
 @app.route('/viewlog')
 def view_the_log() -> 'html':
+    """
+    View text in table browser from file
+    :return: render_template
+    """
     contents = []
     with open('vsearch.log') as log:
         for line in log:
